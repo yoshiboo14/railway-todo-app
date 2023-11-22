@@ -1,0 +1,36 @@
+@charset "utf-8";
+
+.edit-task {
+  width: 1000px;
+  margin: 0 auto;
+  &-form {
+    color: #555555;
+  }
+  &-title,
+  &-detail {
+    width: 300px;
+    margin-bottom: 25px;
+  }
+  &-button {
+    background-color: #242f9b;
+    color: #ffffff;
+    width: 80px;
+    height: 40px;
+    border-radius: 5px;
+  }
+}
+
+$Red: #ff3333;
+
+.delete-task-button {
+  color: $Red;
+  border: solid 1px $Red;
+  width: 80px;
+  height: 40px;
+  margin: 25px 5px;
+  border-radius: 5px;
+}
+
+.error-message {
+  color: $Red;
+}

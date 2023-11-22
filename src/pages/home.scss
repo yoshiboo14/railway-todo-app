@@ -1,3 +1,6 @@
+$Width: 100%;
+$Blue: #242f9b;
+
 .taskList {
   margin: 50px auto;
   list-style: none;
@@ -25,13 +28,13 @@
   padding: 0 25px;
   text-overflow: normal;
   margin-right: 5px;
-  border: solid 1px #242F9B;
+  border: solid 1px $Blue;
   justify-content: center;
   align-items: center;
 }
 
 .active {
-  background-color: #242F9B;
+  background-color: $Blue;
   color: #ffffff;
 }
 
@@ -73,4 +76,40 @@
 
 .display-select {
   width: 100%;
+}
+
+@media (max-width: 900px) {
+  .taskList {
+    width: 800px;
+  }
+}
+
+@media (max-width: 768px) {
+  .taskList {
+    width: 700px;
+  }
+}
+@media (max-width: 320px) {
+  .taskList {
+    width: 300px;
+  }
+  .list-header {
+    flex-direction: column-reverse;
+    align-items: center;
+  }
+  .list-tab {
+    flex-direction: column;
+    align-items: center;
+  }
+  .tasks-header {
+    flex-direction: column-reverse;
+    align-items: center;
+  }
+  .display-select-wrapper {
+    flex-direction: column;
+    align-items: center;
+  }
+  .task-item {
+    height: 120px;
+  }
 }
